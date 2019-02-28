@@ -1,8 +1,49 @@
 $font-stack: Helvetica, sans-serif;
-$primary-font-color: red;
+$primary-font-color: white;
+
+
 
 body {
   font: 100% $font-stack;
   color: $primary-font-color;
-  background-color: pink;
+  background-color: black;
+  background-image: url(../assets/images/header.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
+
+.content {
+  width: 95%;
+  margin:auto;
+  #countdown {
+    font-size: 128px;
+    margin: 100px auto 0px;
+  }
+  #logo {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    width: 35px;
+  }
+  #menu {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    width: 25px;
+  }
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  p {
+    max-width: 600px;
+    align-self: center;
+  }
+};
